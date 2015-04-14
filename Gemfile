@@ -36,6 +36,8 @@ group :development, :test do
   gem 'spring'                                  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'rspec-rails'                             # Testing framework for Rails 3.x, 4.x , see http://rspec.info/documentation/3.2/rspec-rails/
   gem 'capybara'                                # Acceptance test framework for web applications
+  gem 'cucumber-rails', :require => false       # Rails Generators for Cucumber with special support for Capybara and DatabaseCleaner
+  gem 'database_cleaner'                        # Highly recommended for Cucumber
 end
 
 ## NOT NEEDED YET =============================================================
