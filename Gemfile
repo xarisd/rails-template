@@ -23,6 +23,12 @@ gem 'jbuilder', '~> 2.0'                        # Build JSON APIs with ease. Rea
 group :doc do
   gem 'sdoc', '~> 0.4.0'                        # bundle exec rake doc:rails generates the API under doc/api.
 end
+group :development do
+  gem 'better_errors'                           # Replaces the standard Rails error page with a much better and more useful error page.
+  gem 'quiet_assets'                            # Turns off the Rails asset pipeline log.
+  gem 'rack-mini-profiler'                      # Middleware that displays speed badge for every html page.
+  gem 'pry-rails'                               # Powerful alternative to the standard IRB shell for Ruby.
+end
 group :development, :test do
   gem 'byebug'                                  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'web-console', '~> 2.0'                   # Access an IRB console on exception pages or by using <%= console %> in views
