@@ -28,11 +28,14 @@ group :development do
   gem 'quiet_assets'                            # Turns off the Rails asset pipeline log.
   gem 'rack-mini-profiler'                      # Middleware that displays speed badge for every html page.
   gem 'pry-rails'                               # Powerful alternative to the standard IRB shell for Ruby.
+  gem 'spring-commands-rspec'                   # Implements the rspec command for Spring. Run `bundle exec spring binstub rspec`
 end
 group :development, :test do
   gem 'byebug'                                  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'web-console', '~> 2.0'                   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'spring'                                  # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'rspec-rails'                             # Testing framework for Rails 3.x, 4.x , see http://rspec.info/documentation/3.2/rspec-rails/
+  gem 'capybara'                                # Acceptance test framework for web applications
 end
 
 ## NOT NEEDED YET =============================================================
